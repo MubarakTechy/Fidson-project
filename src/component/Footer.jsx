@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import Max2 from '../image/Group 4.png';
+import Max2 from '../image/1691 Logo.PNG';
 import { FaPhone } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";

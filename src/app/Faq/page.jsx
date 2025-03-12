@@ -88,7 +88,7 @@ const Page = () => {
                             <h1 className='font-mono  text-[17px]'>fidsontechnologies@gmail.com</h1>
                         </span>
                         <h1 className="font-bold text-[35px]">or Send us a Direct Message on WhatsApp</h1>
-                        <a href='https://wa.me/234 813 943 7666' className='flex items-center gap-1 '>
+                        <a href='https://wa.me/2348139437666' className='flex items-center gap-1 '>
                             <FaPhone className='text-[#0481EC]' size={20} /> 
                             <h1 className='font-mono  text-[17px]'>+234 813 943 7666 </h1>
                         </a>

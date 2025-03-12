@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { IoCloseSharp } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Image from 'next/image'
-import Max2 from '../image/logo.png';
+import Max2 from '../image/1691 Logo.PNG';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -19,7 +19,7 @@ const Navbar = () => {
           src={Max2.src}
           alt="Max profile"
           width={100}  
-          height={60} 
+          height={90} 
           priority  
         />
           </div>
