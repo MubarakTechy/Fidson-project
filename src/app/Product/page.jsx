@@ -81,7 +81,7 @@ const products = [
 
 const ProductCard = ({ product }) => {
   return (
-    <div className='flex flex-col w-full max-w-xs mx-auto'>
+    <div className='flex flex-col  w-full max-w-xs mx-auto'>
       <div className='w-full h-64 relative'>
         <Image 
           src={product.image.src} 
@@ -109,12 +109,12 @@ const Page = () => {
   return (
     <>
       <Navbar />
-      <div className='px-4 py-10 md:px-10 lg:px-[20%]'>
+      <div className='px-4 py-10  p-20 create  md:px-10 lg:px-[20%]'>
         <h1 className='font-bold text-[#0481EC] text-[28px] md:text-[37px] mb-6 md:mb-10 text-center'>
           Our Amazing Products
         </h1>
         
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-10'>
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

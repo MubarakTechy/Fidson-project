@@ -5,14 +5,14 @@ import Main from '../../image/20542.jpg';
 
 const Hero = () => {
   return (
-    <div className='p-20 flex '>
+    <div className='p-[20%] flex  h-[100vh] w-[100vw] '>
 
        <div className='flex flex-col '>
           <div className='flex flex-col gap-3'>
              <span className='flex flex-col gap-1'>
                 <h1 className='font-bold text-[35px] tracking-[5px] w-[70%]  '>Let&apos;s Create </h1>
-                <p className='font-bold text-[45px] tracking-[10px] underline  text-[#0481EC] '>Memorable </p>
-                <p className='font-bold text-[45px] tracking-[10px] underline text-[#0481EC] '> Experiences</p>
+                <p className='font-bold text-[45px] tracking-[10px]   text-[#0481EC] '>Memorable </p>
+                <p className='font-bold text-[45px] tracking-[10px]  text-[#0481EC] '> Experiences</p>
              </span>
            <span className='flex flex-col gap-2'>
               <p className='max-sm:w-[75vw] text-[15px]  '>Welcome to 1691 tech solution where you can get all most service and also get affodable gadget..</p>

@@ -28,28 +28,28 @@ const Navbar = () => {
           <div className="hidden max-lg:flex-none md:block">
             <ul className="flex space-x-8">
               <li >
-                <span className="relative font-bold text-lg text-[black] hover:text-[#0481EC] transition-all duration-500 ease-in-out cursor-pointer group">
+                <a href="/" className="relative font-bold text-lg text-[black] hover:text-[#0481EC] transition-all duration-500 ease-in-out cursor-pointer group">
                   Home
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0481EC] transition-all duration-500 ease-in-out group-hover:w-full" />
-                </span>
+                </a>
               </li>
               <li>
-                <span className="relative font-bold text-lg text-black hover:text-[#0481EC] transition-all duration-500 ease-in-out cursor-pointer group">
+                <a href="/Product" className="relative font-bold text-lg text-black hover:text-[#0481EC] transition-all duration-500 ease-in-out cursor-pointer group">
                   Product
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0481EC] transition-all duration-500 ease-in-out group-hover:w-full" />
-                </span>
+                </a>
               </li>
               <li>
-                <span className="relative font-bold text-lg text-black hover:text-[#0481EC] transition-all duration-500 ease-in-out cursor-pointer group">
+                <a href="/Aboutus" className="relative font-bold text-lg text-black hover:text-[#0481EC] transition-all duration-500 ease-in-out cursor-pointer group">
                 About
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0481EC] transition-all duration-500 ease-in-out group-hover:w-full" />
-                </span>
+                </a>
               </li>
               <li>
-                <span className="relative font-bold text-lg text-black hover:text-[#0481EC] transition-all duration-500 ease-in-out cursor-pointer group">
+                <a href="/Contactus"className="relative font-bold text-lg text-black hover:text-[#0481EC] transition-all duration-500 ease-in-out cursor-pointer group">
                   Contact Us
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0481EC] transition-all duration-500 ease-in-out group-hover:w-full" />
-                </span>
+                </a>
               </li>
              
             </ul>
@@ -78,9 +78,9 @@ const Navbar = () => {
         >
           <ul className="px-2 pt-2 pb-3 space-y-1">
                 <li>
-                    <span className="block font-bold text-lg text-black hover:text-[#0481EC] hover:translate-x-2 transition-all duration-500 ease-in-out py-2">
+                    <a href="http://"className="block font-bold text-lg text-black hover:text-[#0481EC] hover:translate-x-2 transition-all duration-500 ease-in-out py-2">
                         Home
-                    </span>
+                    </a>
                 </li>
                 <li>
                     <span className="block font-bold text-lg text-black hover:text-[#0481EC] hover:translate-x-2 transition-all duration-500 ease-in-out py-2">

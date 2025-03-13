@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from './Hero';
 import Service from './Service';
-// import Reveiw from './Reveiw';
+import Reveiw from './Reveiw';
 
 
 
@@ -10,7 +10,7 @@ const Home = () => {
     <div>
         <Hero />
         <Service/>
-        {/* <Reveiw/> */}
+        <Reveiw/>
     </div>
   )
 }
