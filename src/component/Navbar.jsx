@@ -18,17 +18,15 @@ const Navbar = () => {
         //   className=' w-[35vw] max-sm:w-[70vw]'
           src={Max2.src}
           alt="Max profile"
-          width={100}  
-          height={90} 
+          width={170} height={70} 
           priority  
         />
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden max-lg:flex-none md:block">
             <ul className="flex space-x-8">
               <li >
-                <a href="/" className="relative font-bold text-lg text-[black] hover:text-[#0481EC] transition-all duration-500 ease-in-out cursor-pointer group">
+                <a href="" className="relative font-bold text-lg text-[black] hover:text-[#0481EC] transition-all duration-500 ease-in-out cursor-pointer group">
                   Home
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0481EC] transition-all duration-500 ease-in-out group-hover:w-full" />
                 </a>

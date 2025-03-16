@@ -13,14 +13,18 @@ const page = () => {
   return (
     <>
         <Navbar />
-        <div className='p-20 flex justify-center flex-col items-center'>
+        <div className='p-20  max-sm:flex-col-reverse max-lg:flex-col-reverse flex justify-center flex-col items-center'>
            <h1 className='font-bold text-[#0481EC] text-[37px] '>We&apos;re glad you are here</h1>
             <div className='flex items-center p-5 gap-5 game'>
-                <div className='flex flex-col gap-2'>
-                    <h1 className='max-sm:w-[75vw] font-bold text-[30px] max-lg:w-[80vw]  w-[30vw]'>About our Company</h1>
-                    <h1 className='max-sm:w-[75vw] text-[15px] max-lg:w-[80vw] leading-7  w-[40vw]'>Fidson Technologies is an ICT company that offer amazing deals on services such as Laptop sales, customisation, maintenance, diagnosis and repair, as well as Data Recovery. </h1>
-                    <h1 className='max-sm:w-[75vw] text-[15px] leading-7 max-lg:w-[80vw]  w-[40vw]'>At Fidson Technologies, we recover data from the storage devices of faulty laptops and other electronic devices.   We also provide internship opportunities for willing learners.</h1>
-                </div>
+            <div className='flex flex-col gap-2'>
+                <h1 className='max-sm:w-[75vw] font-bold text-[30px] max-lg:w-[80vw] w-[30vw]'>About 1691 Tech Solution</h1>
+                <h1 className='max-sm:w-[75vw] text-[15px] max-lg:w-[80vw] leading-7 w-[40vw]'>
+                    1691 Tech Solution is a leading ICT company specializing in laptop sales, customization, maintenance, diagnosis, and repair. We also offer top-notch data recovery services to ensure your valuable information remains secure.
+                </h1>
+                <h1 className='max-sm:w-[75vw] text-[15px] leading-7 max-lg:w-[80vw] w-[40vw]'>
+                    At 1691 Tech Solution, we recover data from faulty storage devices and electronic gadgets with precision and expertise. Additionally, we provide internship opportunities to empower aspiring tech professionals with hands-on experience.
+                </h1>
+            </div>
               <div >
                 <Image
                     className=' w-[35vw] max-sm:w-[30vw]'
@@ -31,7 +35,7 @@ const page = () => {
                     priority />
               </div>
             </div>
-            <div>
+            <div className='max-sm:flex-col-reverse '>
                 <div className='flex gap-5 items-center'>
                     <div className='flex flex-col gap-2'>
                         <h1 className='max-sm:w-[75vw] font-bold text-[35px] max-lg:w-[80vw]  '>Company&apos;s Aim</h1>
@@ -42,16 +46,30 @@ const page = () => {
                     src={Max3.src}
                     alt="Max profile"  width={500} height={700} priority />
                 </div>
-                <div className='flex flex-col gap-7 '>
-                    <span><h1 className='max-sm:w-[75vw] font-bold text-[30px] max-lg:w-[80vw]  '>Cooperate Social Responsibility (CSR): </h1></span>
-                    <h1 className='max-sm:w-[75vw] text-[15px] max-lg:w-[80vw]  leading-7 w-[50vw]'>As part of our CSR, we educate, encourage and motivate young students in Secondary Schools to learn legitimate IT skills that'll be useful for them throughout their journey in life.</h1>
-                    <div className='flex flex-col gap-3 '>
+                <div className='flex flex-col gap-7'>
+                        <span>
+                            <h1 className='max-sm:w-[75vw] font-bold text-[30px] max-lg:w-[80vw]'>
+                                Corporate Social Responsibility (CSR):
+                            </h1>
+                        </span>
+                        <h1 className='max-sm:w-[75vw] text-[15px] max-lg:w-[80vw] leading-7 w-[50vw]'>
+                            As part of our CSR, we are committed to educating, encouraging, and motivating young students in secondary schools to acquire legitimate IT skills that will benefit them throughout their lives.
+                        </h1>
+                        
+                    <div className='flex flex-col gap-3'>
                         <h1 className='max-sm:w-[75vw] font-bold text-[30px]'> History: </h1>
-                        <p className='max-sm:w-[75vw] text-[15px] max-lg:w-[80vw]  leading-7 w-[50vw]'>Fidson Technologies was founded by Adebayo Ahmad Opeyemi in 2012. At the time, he was a student of the Federal University of Technology, Akure (FUTA). Since then, he has gone on to obtain an M.Sc. in Microbiology and Post Graduate Diploma in Education from the University of Ilorin.</p>
-                        <p className='max-sm:w-[75vw] text-[15px] max-lg:w-[80vw] leading-7  w-[50vw]'> In a bid to provide trusted Laptop related services, he has embarked on a series of training, research, seminars and market observation while providing excellent services for his customers in the process.</p>
-                        <p className='max-sm:w-[75vw] text-[15px] max-lg:w-[80vw]  leading-7 w-[50vw]'>After 10 years in this field, with an array of certifications and experiences gathered in the process; we're still in the business of offering the best services to our exteemed customers.</p>
+                        <p className='max-sm:w-[75vw] text-[15px] max-lg:w-[80vw] leading-7 w-[50vw]'>
+                            1691 Tech Solution was founded with a vision to provide trusted and innovative IT services. Over the years, we have expanded our expertise in laptop sales, customization, maintenance, diagnosis, and repair while staying committed to industry advancements.
+                        </p>
+                        <p className='max-sm:w-[75vw] text-[15px] max-lg:w-[80vw] leading-7 w-[50vw]'>
+                            Our journey has been fueled by continuous learning, market research, and technical training to ensure we deliver top-tier solutions to our valued clients.
+                        </p>
+                        <p className='max-sm:w-[75vw] text-[15px] max-lg:w-[80vw] leading-7 w-[50vw]'>
+                            With over a decade of experience, numerous certifications, and an unwavering dedication to excellence, we remain committed to offering the best IT solutions to our esteemed customers.
+                        </p>
                     </div>
                 </div>
+
                
             </div>
             <div className="w-full max-w-4xl mt-12 mb-8">

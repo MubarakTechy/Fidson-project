@@ -30,33 +30,32 @@ const FAQItem = ({ question, answer }) => {
   );
 };
 
-
 const Page = () => {
   const faqData = [
     {
-      question: "Q: Is it safe to buy from your company?",
+      question: "Q: Is it safe to buy from 1691 Tech Solution?",
       answer:
-        "Ans: Yes, it is 100% safe to buy from us. We are legit and our products are quality.",
+        "Ans: Yes, it is 100% safe to buy from us. We are a trusted company, and we offer only high-quality products and services.",
     },
     {
-      question: "Q: How do I get the ordered products?",
+      question: "Q: How do I receive my ordered products?",
       answer:
-        " Ans: Once an order is placed, we start making arrangements for delivery instantly. You can pick up in person from our office at No. 3, Sokoto road, Sabo-Oke, Ilorin. it can also be deliver to you through our trusted logistics companies.  ",
+        "Ans: Once your order is placed, we immediately begin processing it for delivery. You can pick up your order in person from our office at No. 3, Sokoto Road, Sabo-Oke, Ilorin, or we can deliver it to you through our trusted logistics partners.",
     },
     {
-      question: "Q: How can I reach out to you if I have complains?",
+      question: "Q: How can I contact you for complaints or inquiries?",
       answer:
-        "Ans: You can always reach out to us through our contact details, we would be glad to help. You can visit our office at No. 3, Sokoto Road, Sabo-Oke Ilorin.",
+        "Ans: You can always reach out to us through our contact details, and we will be happy to assist you. You can also visit our office at No. 3, Sokoto Road, Sabo-Oke, Ilorin.",
     },
     {
-      question: "Q: Where are you located?",
+      question: "Q: Where is 1691 Tech Solution located?",
       answer:
-        "Ans: We are currently located in Ilorin, Kwara state.",
+        "Ans: We are currently based in Ilorin, Kwara State, Nigeria.",
     },
     {
-      question: "Q: I can’t find my preferred Laptop specs, what should I do?",
+      question: "Q: I can’t find my preferred laptop specifications. What should I do?",
       answer:
-        "Ans: No worries, click this https://wa.link/ovw9rr link, to discuss your preferred choice with us.",
+        "Ans: No worries! Click this link https://wa.link/ovw9rr to discuss your specific laptop requirements with us.",
     },
   ];
 
@@ -87,8 +86,8 @@ const Page = () => {
                             <MdEmail className='text-[#0481EC]' size={20} /> 
                             <h1 className='font-mono  text-[17px]'>fidsontechnologies@gmail.com</h1>
                         </span>
-                        <h1 className="font-bold text-[35px]">or Send us a Direct Message on WhatsApp</h1>
-                        <a href='https://wa.me/2348139437666' className='flex items-center gap-1 '>
+                        <h1 className="font-bold text-[#0481EC] ug   text-[35px]">or Send us a Direct Message on WhatsApp</h1>
+                        <a href='https://wa.me/+2348061622596' className='flex items-center gap-1 '>
                             <FaPhone className='text-[#0481EC]' size={20} /> 
                             <h1 className='font-mono  text-[17px]'>+234 813 943 7666 </h1>
                         </a>
