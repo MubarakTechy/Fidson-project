@@ -84,20 +84,20 @@ const Page = () => {
                         <h1 className="font-bold text-[20px]">You can reach out to us through email, we are always available.</h1>
                         <span className='flex items-center gap-1 '>
                             <MdEmail className='text-[#0481EC]' size={20} /> 
-                            <h1 className='font-mono  text-[17px]'>fidsontechnologies@gmail.com</h1>
+                            <h1 className='font-mono  text-[17px]'>info@1691techsolution.com</h1>
                         </span>
                         <h1 className="font-bold text-[#0481EC] ug   text-[35px]">or Send us a Direct Message on WhatsApp</h1>
-                        <a href='https://wa.me/+2348061622596' className='flex items-center gap-1 '>
+                        <a href='https://wa.me/message/MBU45KTNZGT6O1' className='flex items-center gap-1 '>
                             <FaPhone className='text-[#0481EC]' size={20} /> 
-                            <h1 className='font-mono  text-[17px]'>+234 813 943 7666 </h1>
+                            <h1 className='font-mono  text-[17px]'>+234 806 162 2596 </h1>
                         </a>
                     </div>
                </div>
                <div>
                 <Image
-                        className=' w-[45vw] max-sm:w-[30vw]'
-                        src={Max2.src}
-                        alt="Max profile"  width={300} height={500} priority />
+                  className=' w-[45vw] max-sm:w-[30vw]'
+                  src={Max2.src}
+                  alt="Max profile"  width={300} height={500} priority />
                </div>
             </div>
         </div>

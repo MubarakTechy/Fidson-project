@@ -6,6 +6,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
+
 const Footer = () => {
   return (
     <div className='bg-[#0481EC] p-10 md:p-20 flex flex-col items-center text-center md:text-left'>
@@ -22,8 +23,9 @@ const Footer = () => {
           <h2 className='font-bold text-white text-[18px]'>Links</h2>
           <h2 className='font-mono text-white text-[15px]'>Buy Laptop</h2>
           <h2 className='font-mono text-white text-[15px]'>Laptop Repair</h2>
-          <h2 className='font-mono text-white text-[15px]'>Laptop Accessories</h2>
-          <h2 className='font-mono text-white text-[15px]'>Laptop Diagnosis</h2>
+          <h2 className='font-mono text-white text-[15px]'>Laptop Accessories / Laptop Diagnosis</h2>
+                    
+         
         </div>
 
       
@@ -56,8 +58,9 @@ const Footer = () => {
 
      
       <div className='mt-10 w-full flex flex-col md:flex-row items-center justify-between text-center md:text-left'>
+        
         <h1 className='font-bold text-white text-[15px] mb-4 md:mb-0'>
-          © 2025 1691 Tech Solution. All rights reserved.
+          ©2025 1691 Tech Solution. All rights reserved.
         </h1>
         <button className='bg-white hover:bg-[#0469c1] text-[#0481EC] hover:text-white font-bold p-2 w-full sm:w-[50%] md:w-[10vw] rounded-[15px] transition'>
           Back to Top

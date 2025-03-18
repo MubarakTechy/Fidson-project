@@ -14,9 +14,11 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const page = () => {
     const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
     const [telephone, setTelephone] = useState('')
     const [message, setMessage] = useState('')
     const [sending, setSending ] = useState (false)
+    
 
     async function  fetchApi(e){
         e.preventDefault()
@@ -26,7 +28,7 @@ const page = () => {
            const response  = await fetch (baseurl,{
               method:'POST',
               headers: {'Content-type' : 'application/json'},
-              body : JSON.stringify({name, telephone, message})    
+              body : JSON.stringify({name, email,  telephone, message})    
            }); 
            const resData = await response.json();           
             setSending(false)
@@ -45,9 +47,8 @@ const page = () => {
         <Navbar />
        <form  onSubmit={fetchApi}  method="post">
             <div className='flex flex-col items-center justify-center gap-2 p-20 create' >
-                    <h1 className='font-bold text-[35px] text-[#0481EC] '>Reach out to us</h1>
+                    <h1 className='font-bold text-[35px] text-[#0481EC] '>REACH OUT TO US</h1>
                     <div className='flex flex-col gap-3'>
-                        <p  className=' text-[15px]'>You can reach out to us through email</p>
                        <div className='flex flex-col gap-5'>
                             <span className='flex flex-col gap-1'>
                                 <h1 className='font-bold'>Name</h1>
@@ -57,8 +58,12 @@ const page = () => {
                                 <h1 onChange={(e)=> setTelephone(e.target.value)} name='telephone' value={telephone} className=' font-bold'>Telephone</h1>
                                 <input className='w-[45vw]  max-lg:w-[80vw] max-sm:w-[90vw] bg-[#EFEFEF] p-3  border-none  rounded-[5px]  hover:border-b ' type="number"/>
                             </span>
+                            <span  className='flex flex-col gap-2'>
+                                <h1 onChange={(e)=> setEmail(e.target.value)} name='email' value={email} className=' font-bold'>Email</h1>
+                                <input className='w-[45vw]  max-lg:w-[80vw] max-sm:w-[90vw] bg-[#EFEFEF] p-3  border-none  rounded-[5px]  hover:border-b ' type="email"/>
+                            </span>
                             <div className='flex flex-col gap-4 text-end p-2 '>
-                                <textarea onChange={(e)=> setMessage(e.target.value)} name='message' value={message}  className=' font-mono  max-lg:w-[80vw] max-sm:w-[90vw]  w-[45vw] bg-[#EFEFEF] rounded-[5px]  text-[black] p-3  h-[30vh]  border-1 ' placeholder='Please type your massage'  id=""></textarea>
+                                <textarea onChange={(e)=> setMessage(e.target.value)} name='message' value={message}  className=' font-mono  max-lg:w-[80vw] max-sm:w-[90vw]  w-[44vw] bg-[#EFEFEF] rounded-[5px]  text-[black] p-3  h-[30vh]  border-1 ' placeholder='Please type your massage'  id=""></textarea>
                                 <button  className='p-2 bg-[#0481EC] text-[#E9E9E9] rounded-[15px] font-mono max-sm:w-[25vw]  max-lg:w-[30vw]    w-[10vw] '>{sending ? 'sending...' : 'Send' }</button>
                             </div>
                            <ToastContainer />
@@ -69,7 +74,7 @@ const page = () => {
                             <div className='flex items-center gap-2  '>
                                <span className='flex items-center gap-1 '>
                                     <FaPhone className='text-[#0481EC]' size={20} /> 
-                                    <h1 className='font-mono  text-[17px]'>+2348061622596</h1>
+                                    <h1 className='font-mono  text-[17px]'>+234 806 162 2596</h1>
                                 </span>
                                 <span className='flex items-center gap-1 '>
                                     <FaInstagramSquare className='text-[#0481EC]' size={20} /> 
@@ -88,7 +93,7 @@ const page = () => {
                             </div>
                             <span className='flex items-center gap-2'>
                                 <FaSquareFacebook  className='text-[#0481EC]' size={20} />
-                                <a href='https://www.facebook.com/1691techsolution'  className='font-mono  text-[17px]'>https://www.facebook.com/1691techsolution</a>
+                                <a href='www.facebook.com/1691techsolution'  className='font-mono  text-[17px]'>www.facebook.com/1691techsolution</a>
                             </span>
                         </div>
                     </div>
@@ -98,5 +103,7 @@ const page = () => {
     </>
   )
 }
+
+
 
 export default page
