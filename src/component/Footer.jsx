@@ -31,7 +31,7 @@ const Footer = () => {
       
         <div className='flex flex-col items-center md:items-start gap-3'>
           <h2 className='font-bold text-white text-[18px]'>For Clients</h2>
-          <h2 className='font-mono text-white text-[15px]'>Testimonies</h2>
+          <h2 className='font-mono text-white text-[15px]'>Reviews</h2>
           <h2 className='font-mono text-white text-[15px]'>< a href="/Faq" >Faq</a></h2>
         </div>
 

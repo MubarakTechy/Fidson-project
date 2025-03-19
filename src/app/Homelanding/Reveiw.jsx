@@ -1,10 +1,8 @@
-"use client";
-
+"use client"
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import Image from 'next/image';
-import Max2 from '../../image/image 2.png';
+
 
 
 // Import Swiper styles
@@ -14,7 +12,7 @@ import "swiper/css/pagination";
 
 const reviewData = [
   {
-    src: Max2.src ,
+    
     name: "ToshMoney",
     role: "Software Engineer",
     review:
@@ -24,7 +22,7 @@ const reviewData = [
     
   },
   {
-    src: Max2.src,
+    
     name: "Jane Victory",
     role: "Product Manager",
     review:
@@ -33,7 +31,7 @@ const reviewData = [
   
   },
   {
-    src: Max2.src,
+    
     name: "Taiwo Brown",
     role: "Designer",
     review:
@@ -42,7 +40,7 @@ const reviewData = [
 
   },
   {
-    src: Max2.src,
+  
     name: "Emily White",
     role: "Entrepreneur",
     review:
@@ -60,7 +58,7 @@ const Reviews = () => {
         </h1>
 
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]} // Enable Swiper features
+          modules={[Navigation, Pagination, Autoplay]}  
           spaceBetween={30} // Space between slides
           slidesPerView={1} // Default: 1 slide on mobile
           autoplay={{ delay: 3000, disableOnInteraction: false }} // Auto-slide every 3s
@@ -74,15 +72,7 @@ const Reviews = () => {
           {reviewData.map((review, index) => (
             <SwiperSlide key={index}>
             <div className="bg-white p-6 rounded-lg shadow-lg h-72 flex flex-col justify-between">
-                    <div className="flex items-center mb-4">
-                    <Image
-                        src={review.image}
-                        alt={`${review.name}'s profile`}
-                        width={60} 
-                        height={60} 
-                        priority 
-                        // className="w-12 h-12 rounded-full mr-4 object-cover"
-                    />
+                 
                     <div>
                         <h3 className="text-lg font-semibold text-gray-900">
                         {review.name}
@@ -95,7 +85,6 @@ const Reviews = () => {
                     {"★".repeat(Math.floor(review.rating)) +
                         (review.rating % 1 !== 0 ? "☆" : "")}
                     </p>
-              </div>
             </SwiperSlide>
           ))}
         </Swiper>
