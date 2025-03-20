@@ -21,9 +21,9 @@ const Footer = () => {
       
         <div className='flex flex-col items-center md:items-start gap-3'>
           <h2 className='font-bold text-white text-[18px]'>Links</h2>
-          <h2 className='font-mono text-white text-[15px]'>Buy Laptop</h2>
-          <h2 className='font-mono text-white text-[15px]'>Laptop Repair</h2>
-          <h2 className='font-mono text-white text-[15px]'>Laptop Accessories / Laptop Diagnosis</h2>
+          <a href="https://wa.me/message/MBU45KTNZGT6O1"  className='font-mono text-white text-[15px]'>Buy Laptop</a>
+          <a href="/Repair"  className='font-mono text-white text-[15px]'>Laptop Repair</a>
+          <a href="/Aboutus"   className='font-mono text-white text-[15px]'>Laptop Accessories / Laptop Diagnosis</a>
                     
          
         </div>
@@ -63,7 +63,7 @@ const Footer = () => {
           ©2025 1691 Tech Solution. All rights reserved.
         </h1>
         <button className='bg-white hover:bg-[#0469c1] text-[#0481EC] hover:text-white font-bold p-2 w-full sm:w-[50%] md:w-[10vw] rounded-[15px] transition'>
-          Back to Top
+          <a href="/">Back to Top</a>
         </button>
       </div>
     </div>

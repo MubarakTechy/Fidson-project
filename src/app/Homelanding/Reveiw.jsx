@@ -14,9 +14,8 @@ const reviewData = [
 
   {
 
-    name: "ToshMoney",
-    role: "Software Engineer",
-    review: "1691 Tech provided an amazing experience! Their solutions are innovative and reliable.",
+    role: "COSTOMERS",
+    review: "I love the watch ❤️ very perfect Battery life Rocking it non-stop  I appreciate😊",
     rating: 5,
 
 
@@ -24,9 +23,9 @@ const reviewData = [
  
   {
 
-    name: "Jane Victory",
-    role: "Product Manager",
-    review: "The team at 1691 Tech is fantastic. They delivered beyond our expectations.",
+    
+    role: "COSTOMERS",
+    review: "I will rate you 💯 as regards Customer safisfaction and swift response to enquired and delivery.. i Enjoy my Airpods cool sound and noise proof.✌️ ",
     rating: 4,
  
   },
@@ -34,9 +33,8 @@ const reviewData = [
  
   {
 
-    name: "Taiwo Brown",
-    role: "Designer",
-    review: "Creative and professional—1691 Tech knows how to make tech work for you!",
+    role: "COSTOMERS",
+    review: " The thress laptop i got are very perfectn and Customer service is applaudable❤️",
     rating: 5,
 
 
@@ -44,10 +42,8 @@ const reviewData = [
 
   
   {
-
-    name: "Emily White",
-    role: "Entrepreneur",
-    review: "I highly recommend 1691 Tech for anyone looking to scale their business.",
+    role: "COSTOMERS",
+    review: "I highly recommend 1691 Tech for anyone looking to scale their business.❤️💯",
     rating: 4.5,
   },
 ];
@@ -71,7 +67,8 @@ const Reviews = () => {
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            1024: { slidesPerView: 3 }, 
+
           }}
           className="pb-12"
         >
@@ -85,7 +82,7 @@ const Reviews = () => {
                 
                 <div>
                   <div className="mt-4">
-                    <h3 className="font-semibold text-gray-900">{review.name}</h3>
+                   
                     <p className="text-sm text-gray-500">{review.role}</p>
                   </div>
                   
