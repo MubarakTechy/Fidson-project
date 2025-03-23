@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import Max2 from '../image/1691 Logo.PNG';
+import Max2 from '../image/footer.png';
 import { FaPhone, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
@@ -11,14 +11,15 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-blue-600 to-blue-800 pt-12 pb-6">
       <div className="container mx-auto px-4">
-        {/* Top Section with Logo and Navigation */}
+     
+     
         <div className="flex flex-col lg:flex-row justify-between items-center mb-12">
           <div className="mb-8 lg:mb-0">
             <Image 
               src={Max2.src} 
               alt="1691 Tech Solution Logo" 
               width={200} 
-              height={80} 
+              height={60} 
               priority 
               className="drop-shadow-lg"
             />
@@ -27,8 +28,13 @@ const Footer = () => {
             </p>
           </div>
           
+   
+   
+   
+   
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-10">
-            {/* Links Column */}
+      
+      
             <div className="flex flex-col gap-3">
               <h2 className="font-bold text-white text-xl mb-2 border-b border-blue-400 pb-2">Services</h2>
               <a href="https://wa.me/message/MBU45KTNZGT6O1" className="text-blue-100 hover:text-white hover:translate-x-1 transition-all">
@@ -42,7 +48,7 @@ const Footer = () => {
               </a>
             </div>
             
-            {/* For Clients Column */}
+
             <div className="flex flex-col gap-3">
               <h2 className="font-bold text-white text-xl mb-2 border-b border-blue-400 pb-2">For Clients</h2>
               <a href="/Reviews" className="text-blue-100 hover:text-white hover:translate-x-1 transition-all">
@@ -56,7 +62,7 @@ const Footer = () => {
               </a>
             </div>
             
-            {/* Contact Column */}
+
             <div className="flex flex-col gap-3">
               <h2 className="font-bold text-white text-xl mb-2 border-b border-blue-400 pb-2">Get in Touch</h2>
               <a href="tel:+2348139437666" className="flex items-center gap-2 text-blue-100 hover:text-white transition-all">
@@ -87,10 +93,10 @@ const Footer = () => {
           </div>
         </div>
         
-        {/* Divider */}
+
         <div className="border-t border-blue-400 mb-6"></div>
         
-        {/* Bottom Section */}
+
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-blue-100 mb-4 md:mb-0">
             ©2025 1691 Tech Solution. All rights reserved.

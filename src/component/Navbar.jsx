@@ -4,7 +4,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import Max2 from '../image/1691 Logo.PNG';
+import Max2 from '../image/navlogo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,8 +25,8 @@ const Navbar = () => {
             <Image
               src={Max2.src}
               alt="1691 Logo"
-              width={170} 
-              height={70} 
+              width={160} 
+              height={50} 
               priority  
             />
           </div>

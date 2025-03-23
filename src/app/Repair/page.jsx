@@ -68,7 +68,7 @@ const benefits = [
 
 const RepairServiceCard = ({ service }) => {
   return (
-    <div className='flex flex-col w-full max-w-xs mx-auto bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow'>
+    <div className='flex flex-col w-full max-w-xs mx-auto bg-white p-10 rounded-lg shadow-md hover:shadow-lg transition-shadow'>
       <div className='w-full h-48 relative mb-4'>
         <Image
           src={service.image.src}
