@@ -13,10 +13,10 @@ const page = () => {
   return (
     <>
         <Navbar />
-        <div className='p-20  max-sm:flex-col-reverse max-lg:flex-col-reverse flex justify-center flex-col items-center'>
-           <h1 className='font-bold text-[#0481EC] text-[37px] '>We&apos;re glad you are here</h1>
-            <div className='flex items-center p-5 gap-5 game'>
-            <div className='flex flex-col gap-2'>
+        <div className='p-20  max-sm:flex-col max-lg:flex-col-reverse flex justify-center flex-col items-center'>
+           <h1 className='font-bold text-[#0481EC] max-sm:text-[25px] text-[37px] '>We&apos;re glad you are here</h1>
+            <div className='flex max-sm:flex-col  items-center p-5 gap-5 game'>
+            <div className='flex  max-sm:flex-col flex-col gap-2'>
                 <h1 className='max-sm:w-[75vw] font-bold text-[30px] max-lg:w-[80vw] w-[30vw]'>About 1691 Tech Solution</h1>
                 <h1 className='max-sm:w-[75vw] text-[15px] max-lg:w-[80vw] leading-7 w-[40vw]'>
                     1691 Tech Solution is a leading ICT company specializing in laptop sales, customization, maintenance, diagnosis, and repair. We also offer top-notch data recovery services to ensure your valuable information remains secure.
@@ -27,7 +27,7 @@ const page = () => {
             </div>
               <div >
                 <Image
-                    className=' w-[35vw] max-sm:w-[30vw]'
+                    className=' w-[35vw] max-sm:w-[50vw]'
                     src={Max2.src}
                     alt="Max profile"
                     width={500}  
@@ -35,18 +35,20 @@ const page = () => {
                     priority />
               </div>
             </div>
-            <div className='max-sm:flex-col-reverse '>
-                <div className='flex gap-5 items-center'>
+            <div className='max-sm:flex-col '>
+                <div className='flex gap-5 max-sm:flex-col  items-center'>
                     <div className='flex flex-col gap-2'>
                         <h1 className='max-sm:w-[75vw] font-bold text-[35px] max-lg:w-[80vw]  '>Company&apos;s Aim</h1>
                         <h1 className='max-sm:w-[75vw] text-[15px] max-lg:w-[80vw] leading-7  w-[40vw]'>Technologica della fidato! Our Aim is to create a trusting and long lasting relationship with our customers. We hope to achieve this by providing our customers with the best products that fit their needs at very friendly prices. We hope to see you as part of our future as we grow together.</h1>
                     </div>
-                    <Image
-                    className=' w-[45vw] max-sm:w-[30vw]'
-                    src={Max3.src}
-                    alt="Max profile"  width={500} height={700} priority />
+                    <div>
+                        <Image
+                        className=' w-[45vw] max-sm:w-[50vw]'
+                        src={Max3.src}
+                        alt="Max profile"  width={500} height={700} priority />
+                    </div>
                 </div>
-                <div className='flex flex-col gap-7'>
+                <div className='flex max-sm:flex-col  flex-col gap-7'>
                         <span>
                             <h1 className='max-sm:w-[75vw] font-bold text-[30px] max-lg:w-[80vw]'>
                                 Corporate Social Responsibility (CSR):

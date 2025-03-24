@@ -51,7 +51,7 @@ const Footer = () => {
 
             <div className="flex flex-col gap-3">
               <h2 className="font-bold text-white text-xl mb-2 border-b border-blue-400 pb-2">For Clients</h2>
-              <a href="/Reviews" className="text-blue-100 hover:text-white hover:translate-x-1 transition-all">
+              <a href="/" className="text-blue-100 hover:text-white hover:translate-x-1 transition-all">
                 Customer Reviews
               </a>
               <a href="/Faq" className="text-blue-100 hover:text-white hover:translate-x-1 transition-all">
@@ -83,11 +83,11 @@ const Footer = () => {
                 </div>
                 <span>@1691Tech</span>
               </a>
-              <a href="mailto:support@1691tech.com" className="flex items-center gap-2 text-blue-100 hover:text-white transition-all">
+              <a href="mailto:info@1691techsolution.com" className="flex items-center gap-2 text-blue-100 hover:text-white transition-all">
                 <div className="bg-blue-500 p-2 rounded-full">
                   <MdEmail className="text-white" size={14} />
                 </div>
-                <span>support@1691tech.com</span>
+                <span>info@1691techsolution.com</span>
               </a>
             </div>
           </div>

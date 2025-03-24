@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 import { motion } from 'framer-motion';
 
-const ContactPage = () => {
+const Page = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [telephone, setTelephone] = useState('')
@@ -44,7 +44,7 @@ const ContactPage = () => {
             setSending(false)
             toast.success('Successfully sent!')
             
-            // Clear form after successful submission
+        
             setName('');
             setEmail('');
             setTelephone('');
@@ -59,7 +59,7 @@ const ContactPage = () => {
         }
     }
 
-    // Animation variants
+
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: { 
@@ -100,7 +100,7 @@ const ContactPage = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <div className='flex flex-col md:flex-row p-6 md:p-10 gap-8'>
-                        {/* Contact Information Section */}
+                       
                         <motion.div 
                             className="flex flex-col gap-7 w-full md:w-1/2"
                             variants={containerVariants}
@@ -108,7 +108,7 @@ const ContactPage = () => {
                             animate={isVisible ? "visible" : "hidden"}
                         >
                             <motion.h1 variants={itemVariants} className='text-2xl md:text-3xl text-white font-bold'>
-                                Contact Information
+                                Contact 
                             </motion.h1>
                             <motion.div variants={itemVariants} className="border-t border-white mb-4"></motion.div>
                             
@@ -129,8 +129,7 @@ const ContactPage = () => {
                             <motion.div 
                                 variants={itemVariants}
                                 className='flex items-center gap-4 group'
-                                whileHover={{ x: 10, transition: { duration: 0.2 } }}
-                            >
+                                whileHover={{ x: 10, transition: { duration: 0.2 } }} >
                                 <div className='h-12 w-12 md:h-14 md:w-14 bg-white p-2 rounded-lg flex items-center justify-center shadow-md'>
                                     <MdPhonelinkRing className='text-[#2256D4] text-xl md:text-2xl transition-transform group-hover:scale-110' />
                                 </div>
@@ -155,7 +154,7 @@ const ContactPage = () => {
                             </motion.div>
                         </motion.div>
 
-                        {/* Form Section */}
+                 
                         <motion.div 
                             className='w-full md:w-1/2'
                             variants={containerVariants}
@@ -166,16 +165,15 @@ const ContactPage = () => {
                                 <div className='flex flex-col gap-4 w-full'>
                                     <motion.div variants={formItemVariants} className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
                                         <input 
-                                            placeholder='Name *' 
+                                            placeholder='Name ' 
                                             onChange={(e)=> setName(e.target.value)} 
                                             name='name' 
                                             value={name}  
                                             className='w-full bg-white bg-opacity-90 p-3 border-l-4 border-l-[#2256D4] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#2256D4] transition-all duration-300' 
                                             type="text"
-                                            required 
-                                        />
+                                            required />
                                         <input 
-                                            placeholder='Telephone *' 
+                                            placeholder='Telephone ' 
                                             onChange={(e)=> setTelephone(e.target.value)} 
                                             name='telephone' 
                                             value={telephone} 
@@ -187,7 +185,7 @@ const ContactPage = () => {
                                     
                                     <motion.div variants={formItemVariants} className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
                                         <input 
-                                            placeholder='Email *' 
+                                            placeholder='Email ' 
                                             onChange={(e)=> setEmail(e.target.value)} 
                                             name='email' 
                                             value={email}  
@@ -211,7 +209,7 @@ const ContactPage = () => {
                                             name='message' 
                                             value={message}  
                                             className='w-full bg-white bg-opacity-90 rounded-md text-gray-800 p-4 h-32 border-l-4 border-l-[#2256D4] shadow-sm resize-none focus:outline-none focus:ring-2 focus:ring-[#2256D4] transition-all duration-300' 
-                                            placeholder='Please type your message *'
+                                            placeholder='Please type your message '
                                             required
                                         ></textarea>
                                     </motion.div>
@@ -251,4 +249,4 @@ const ContactPage = () => {
     )
 }
 
-export default ContactPage;
+export default Page;

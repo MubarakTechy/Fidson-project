@@ -68,7 +68,7 @@ const benefits = [
 
 const RepairServiceCard = ({ service }) => {
   return (
-    <div className='flex flex-col w-full max-w-xs mx-auto bg-white p-10 rounded-lg shadow-md hover:shadow-lg transition-shadow'>
+    <div className='flex flex-col w-full max-w-xs mx-auto bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow'>
       <div className='w-full h-48 relative mb-4'>
         <Image
           src={service.image.src}
@@ -78,11 +78,13 @@ const RepairServiceCard = ({ service }) => {
           priority
         />
       </div>
+      <div>
       <h1 className='text-[20px] font-bold text-[#0481EC]'>{service.name}</h1>
       <p className='text-gray-700 my-2'>{service.description}</p>
       <button className='mt-4 py-2 px-4 bg-[#0481EC] text-white rounded hover:bg-blue-600 transition-colors'>
         Book Repair
       </button>
+      </div>
     </div>
   );
 };
@@ -93,7 +95,7 @@ const Page = () => {
       <Navbar />
       
     
-      <div className='bg-gradient-to-r from-blue-50 to-blue-100 py-16'>
+      <div className='bg-gradient-to-r pt-28   from-blue-50 to-blue-100 py-16'>
         <div className='px-4 md:px-10 lg:px-[20%] max-w-7xl mx-auto'>
           <div className='flex flex-col md:flex-row items-center gap-10'>
             <div className='md:w-1/2'>

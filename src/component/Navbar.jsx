@@ -25,7 +25,7 @@ const Navbar = () => {
             <Image
               src={Max2.src}
               alt="1691 Logo"
-              width={160} 
+              width={140} 
               height={50} 
               priority  
             />
