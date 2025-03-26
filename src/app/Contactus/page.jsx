@@ -97,16 +97,14 @@ const Page = () => {
                     className='bg-[#2256D4] rounded-lg shadow-xl w-full max-w-6xl overflow-hidden'
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
-                >
+                    transition={{ duration: 0.6 }}>
                     <div className='flex flex-col md:flex-row p-6 md:p-10 gap-8'>
                        
                         <motion.div 
                             className="flex flex-col gap-7 w-full md:w-1/2"
                             variants={containerVariants}
                             initial="hidden"
-                            animate={isVisible ? "visible" : "hidden"}
-                        >
+                            animate={isVisible ? "visible" : "hidden"}>
                             <motion.h1 variants={itemVariants} className='text-2xl md:text-3xl text-white font-bold'>
                                 Contact 
                             </motion.h1>
@@ -115,8 +113,7 @@ const Page = () => {
                             <motion.div 
                                 variants={itemVariants}
                                 className='flex gap-4 items-center group'
-                                whileHover={{ x: 10, transition: { duration: 0.2 } }}
-                            >
+                                whileHover={{ x: 10, transition: { duration: 0.2 } }}>
                                 <div className='h-12 w-12 md:h-14 md:w-14 bg-white p-2 rounded-lg flex items-center justify-center shadow-md'>
                                     <FaLocationDot className='text-[#2256D4] text-xl md:text-2xl transition-transform group-hover:scale-110' />
                                 </div>
@@ -191,16 +188,14 @@ const Page = () => {
                                             value={email}  
                                             className='w-full bg-white bg-opacity-90 p-3 border-l-4 border-l-[#2256D4] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#2256D4] transition-all duration-300' 
                                             type="email"
-                                            required
-                                        />
+                                            required/>
                                         <input 
                                             placeholder='Company' 
                                             onChange={(e)=> setCompany(e.target.value)} 
                                             name='company' 
                                             value={company}  
                                             className='w-full bg-white bg-opacity-90 p-3 border-l-4 border-l-[#2256D4] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#2256D4] transition-all duration-300' 
-                                            type="text"
-                                        />
+                                            type="text" />
                                     </motion.div>
                                     
                                     <motion.div variants={formItemVariants} className='w-full'>
