@@ -98,7 +98,7 @@ const ProductCard = ({ product }) => {
           {product.available ? 'Available' : 'Out of Stock'}
         </h1>
         <button className='text-[15px] font-bold text-[#0481EC] cursor-pointer hover:underline'>
-          order Now
+          Order Now
         </button>
       </div>
     </div>
@@ -109,7 +109,7 @@ const Page = () => {
   return (
     <>
       <Navbar />
-      <div className='px-4 py-10  p-20 create  md:px-10 lg:px-[20%]'>
+      <div className='flex flex-col items-center justify-center p-20 create  max-sm:p-20 lg:p-[10%]'>
         <h1 className='font-bold text-[#0481EC] text-[28px] md:text-[37px] mb-6 md:mb-10 text-center'>
           Our Amazing Products
         </h1>

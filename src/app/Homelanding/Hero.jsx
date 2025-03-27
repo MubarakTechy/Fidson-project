@@ -8,18 +8,18 @@ const Hero = () => {
 
 
   return (
-    <div className="p-10">
+    <div className="p-20">
       <div className="px-4 py-6 md:p-8 lg:p-16 xl:p-36 p-38 flex flex-col md:flex-row items-center gap-8">
         <div className="flex flex-col gap-5 w-full md:w-1/2">
           <div className="flex flex-col gap-4 md:gap-6">
-            <span className="flex flex-col">
-              <h1 className="font-bold text-2xl md:text-3xl lg:text-[35px] tracking-wide md:tracking-[5px] w-full md:w-[90%] lg:w-[70%]">
+            <span className="flex flex-col gap-1">
+              <h1 className="font-bold text-2xl max-sm:text-[37px] lg:text-[35px] tracking-wide md:tracking-[5px] w-full md:w-[90%] lg:w-[70%]">
                 Let&apos;s Create
               </h1>
-              <p className="font-bold text-3xl md:text-4xl lg:text-[45px] tracking-wide md:tracking-[10px] text-[#0481EC]">
+              <p className="font-bold text-3xl  max-sm:text-[37px] lg:text-[45px] tracking-wide md:tracking-[10px] text-[#0481EC]">
                 Memorable
               </p>
-              <p className="font-bold text-3xl md:text-4xl lg:text-[45px] tracking-wide md:tracking-[10px] text-[#0481EC]">
+              <p className="font-bold text-3xl  max-sm:text-[37px] lg:text-[45px] tracking-wide md:tracking-[10px] text-[#0481EC]">
                 Experiences
               </p>
             </span>
@@ -47,10 +47,10 @@ const Hero = () => {
           <Image
             src={Main.src}
             alt="Main profile"
-            width={800}
-            height={1000}
+            width={900}
+            height={1100}
             priority
-            className="w-full h-auto"
+            className="w-full  max-sm:w-[90vw] h-auto"
           />
         </div>
       </div>

@@ -14,7 +14,7 @@ const page = () => {
     <>
         <Navbar />
         <div className='p-20  max-sm:flex-col max-lg:flex-col-reverse flex justify-center flex-col items-center'>
-           <h1 className='font-bold text-[#0481EC] max-sm:text-[25px] text-[37px] '>We&apos;re glad you are here</h1>
+           <h1 className='font-bold text-[#0481EC] max-sm:text-[27px] max-sm:w-[75vw] text-[37px] '>We&apos;re glad you are here</h1>
             <div className='flex max-sm:flex-col  items-center p-5 gap-5 game'>
             <div className='flex  max-sm:flex-col flex-col gap-2'>
                 <h1 className='max-sm:w-[75vw] font-bold text-[30px] max-lg:w-[80vw] w-[30vw]'>About 1691 Tech Solution</h1>
@@ -27,7 +27,7 @@ const page = () => {
             </div>
               <div >
                 <Image
-                    className=' w-[35vw] max-sm:w-[50vw]'
+                    className=' w-[35vw] max-sm:w-[60vw]'
                     src={Max2.src}
                     alt="Max profile"
                     width={500}  
@@ -43,7 +43,7 @@ const page = () => {
                     </div>
                     <div>
                         <Image
-                        className=' w-[45vw] max-sm:w-[50vw]'
+                        className=' w-[45vw] max-sm:w-[60vw]'
                         src={Max3.src}
                         alt="Max profile"  width={500} height={700} priority />
                     </div>

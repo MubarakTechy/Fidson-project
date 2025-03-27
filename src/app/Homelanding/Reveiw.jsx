@@ -25,7 +25,7 @@ const reviewData = [
 
     
     role: "CUSTOMER",
-    review: "I will rate you 💯 as regards Customer safisfaction and swift response to enquired and delivery.. i Enjoy my Airpods cool sound and noise proof.✌️ ",
+    review: "I will rate you 💯 as regards Customer safisfaction and swift response to enquired and delivery.. I Enjoy my Airpods cool sound and noise proof.✌️ ",
     rating: 4,
  
   },
@@ -34,7 +34,7 @@ const reviewData = [
   {
 
     role: "CUSTOMER",
-    review: " The three laptop I got are very perfectn and Customer service is applaudable❤️",
+    review: " The three laptop I got are very perfect and Customer service is applaudable❤️",
     rating: 5,
 
 

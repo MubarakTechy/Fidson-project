@@ -18,12 +18,12 @@ const FAQItem = ({ question, answer }) => {
         className="w-full text-left flex justify-between items-center focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-lg font-medium">{question}</span>
+        <span className="text-lg max-sm:w-[190vw] max-sm:text-[15px] max-sm:font-bold font-medium">{question}</span>
         <span>{isOpen ? "−" : "+"}</span>
       </button>
       {isOpen && (
         <div className="mt-2 text-gray-700">
-          <p>{answer}</p>
+          <p clas>{answer}</p>
         </div>
       )}
     </div>
@@ -67,9 +67,9 @@ const Page = () => {
                 <h1 className="text-3xl font-bold text-[#0481EC] mb-8 text-center">
                     Frequently Asked Questions
                 </h1>
-                <div className=" p-2 gap-3 ">
+                <div className=" p-2  gap-3 ">
                     {faqData.map((faq, index) => (
-                    <FAQItem
+                    <FAQItem className='max-sm:w-[65vw]'
                         key={index}
                         question={faq.question}
                         answer={faq.answer}
@@ -77,16 +77,16 @@ const Page = () => {
                     ))}
                 </div>
             </div>
-            <div className="flex items-center " >
+            <div className="flex items-center   max-sm:flex-col" >
                 <div className="flex flex-col ">
-                     <h1 className="text-[30px] font-bold text-[#0481EC] mb-8">If you have a different question.</h1>
+                     <h1 className="text-[30px]  font-bold max-sm:w-[75vw] max-sm:text-[25px] text-[#0481EC] mb-8">If you have a different question.</h1>
                     <div>
-                        <h1 className="font-bold text-[20px]">You can reach out to us through email, we are always available.</h1>
+                        <h1 className="font-bold   max-sm:text-[17px]  max-sm:w-[75vw] text-[20px]">You can reach out to us through email, we are always available.</h1>
                         <span className='flex items-center gap-1 '>
                             <MdEmail className='text-[#0481EC]' size={20} /> 
                             <h1 className='font-mono  text-[17px]'>info@1691techsolution.com</h1>
                         </span>
-                        <h1 className="font-bold text-[#0481EC] ug   text-[35px]">or Send us a Direct Message on WhatsApp</h1>
+                        <h1 className="font-bold text-[#0481EC]  max-sm:text-[25px] max-sm:w-[65vw] text-[35px]">Or Send us a Direct Message on WhatsApp</h1>
                         <a href='https://wa.me/message/MBU45KTNZGT6O1' className='flex items-center gap-1 '>
                             <FaPhone className='text-[#0481EC]' size={20} /> 
                             <h1 className='font-mono  text-[17px]'>+234 806 162 2596 </h1>
@@ -95,7 +95,7 @@ const Page = () => {
                </div>
                <div>
                 <Image
-                  className=' w-[45vw] max-sm:w-[30vw]'
+                  className=' w-[45vw] max-sm:w-[55vw]'
                   src={Max2.src}
                   alt="Max profile"  width={300} height={500} priority />
                </div>
