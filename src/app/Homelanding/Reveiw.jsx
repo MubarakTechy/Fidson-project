@@ -14,7 +14,7 @@ const reviewData = [
 
   {
 
-    role: "COSTOMERS",
+    role: "CUSTOMER",
     review: "I love the watch ❤️ very perfect Battery life Rocking it non-stop  I appreciate😊",
     rating: 5,
 
@@ -24,7 +24,7 @@ const reviewData = [
   {
 
     
-    role: "COSTOMERS",
+    role: "CUSTOMER",
     review: "I will rate you 💯 as regards Customer safisfaction and swift response to enquired and delivery.. i Enjoy my Airpods cool sound and noise proof.✌️ ",
     rating: 4,
  
@@ -33,8 +33,8 @@ const reviewData = [
  
   {
 
-    role: "COSTOMERS",
-    review: " The thress laptop i got are very perfectn and Customer service is applaudable❤️",
+    role: "CUSTOMER",
+    review: " The three laptop I got are very perfectn and Customer service is applaudable❤️",
     rating: 5,
 
 
@@ -42,7 +42,7 @@ const reviewData = [
 
   
   {
-    role: "COSTOMERS",
+    role: "CUSTOMER",
     review: "I highly recommend 1691 Tech for anyone looking to scale their business.❤️💯",
     rating: 4.5,
   },
@@ -53,7 +53,7 @@ const Reviews = () => {
     <div className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-[#0481EC] mb-2">CUSTOMER REVIEWS</h2>
+          <h2 className="text-3xl font-bold text-[#0481EC] mb-2">CUSTOMERS REVIEWS</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             See what our clients have to say about our services and solutions
           </p>

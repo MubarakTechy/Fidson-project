@@ -98,7 +98,7 @@ const ProductCard = ({ product }) => {
           {product.available ? 'Available' : 'Out of Stock'}
         </h1>
         <button className='text-[15px] font-bold text-[#0481EC] cursor-pointer hover:underline'>
-          Buy Now
+          order Now
         </button>
       </div>
     </div>
