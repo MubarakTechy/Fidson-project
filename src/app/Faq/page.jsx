@@ -7,8 +7,6 @@ import { FaPhone } from "react-icons/fa6";
 import Image from 'next/image';
 import Max2 from '../../image/Saly-37.png';
 
-
-
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,12 +16,12 @@ const FAQItem = ({ question, answer }) => {
         className="w-full text-left flex justify-between items-center focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-lg max-sm:w-[190vw] max-sm:text-[15px] max-sm:font-bold font-medium">{question}</span>
-        <span>{isOpen ? "−" : "+"}</span>
+        <span className="text-lg sm:text-xl font-medium">{question}</span>
+        <span className="text-xl">{isOpen ? "−" : "+"}</span>
       </button>
       {isOpen && (
         <div className="mt-2 text-gray-700">
-          <p clas>{answer}</p>
+          <p className="text-base sm:text-lg">{answer}</p>
         </div>
       )}
     </div>
@@ -53,56 +51,79 @@ const Page = () => {
         "Ans: We are currently based in Ilorin, Kwara State, Nigeria.",
     },
     {
-      question: "Q: I can’t find my preferred laptop specifications. What should I do?",
+      question: "Q: I can't find my preferred laptop specifications. What should I do?",
       answer:
         "Ans: No worries! Click this link https://wa.link/ovw9rr to discuss your specific laptop requirements with us.",
     },
   ];
 
   return (
-    <>
-    <Navbar />
-        <div className="p-20">
-            <div className="max-w-3xl mx-auto py-12 px-4">
-                <h1 className="text-3xl font-bold text-[#0481EC] mb-8 text-center">
-                    Frequently Asked Questions
-                </h1>
-                <div className=" p-2  gap-3 ">
-                    {faqData.map((faq, index) => (
-                    <FAQItem className='max-sm:w-[65vw]'
-                        key={index}
-                        question={faq.question}
-                        answer={faq.answer}
-                    />
-                    ))}
-                </div>
-            </div>
-            <div className="flex items-center   max-sm:flex-col" >
-                <div className="flex flex-col ">
-                     <h1 className="text-[30px]  font-bold max-sm:w-[75vw] max-sm:text-[25px] text-[#0481EC] mb-8">If you have a different question.</h1>
-                    <div>
-                        <h1 className="font-bold   max-sm:text-[17px]  max-sm:w-[75vw] text-[20px]">You can reach out to us through email, we are always available.</h1>
-                        <span className='flex items-center gap-1 '>
-                            <MdEmail className='text-[#0481EC]' size={20} /> 
-                            <h1 className='font-mono  text-[17px]'>info@1691techsolution.com</h1>
-                        </span>
-                        <h1 className="font-bold text-[#0481EC]  max-sm:text-[25px] max-sm:w-[65vw] text-[35px]">Or Send us a Direct Message on WhatsApp</h1>
-                        <a href='https://wa.me/message/MBU45KTNZGT6O1' className='flex items-center gap-1 '>
-                            <FaPhone className='text-[#0481EC]' size={20} /> 
-                            <h1 className='font-mono  text-[17px]'>+234 806 162 2596 </h1>
-                        </a>
-                    </div>
-               </div>
-               <div>
-                <Image
-                  className=' w-[45vw] max-sm:w-[55vw]'
-                  src={Max2.src}
-                  alt="Max profile"  width={300} height={500} priority />
-               </div>
-            </div>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-grow container mx-auto px-4 py-10">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-2xl sm:text-3xl font-bold text-[#0481EC] mb-8 text-center">
+            Frequently Asked Questions
+          </h1>
+          <div className="bg-white rounded-lg shadow-md p-6">
+            {faqData.map((faq, index) => (
+              <FAQItem
+                key={index}
+                question={faq.question}
+                answer={faq.answer}
+              />
+            ))}
+          </div>
         </div>
-        <Footer />
-    </>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-10 items-center">
+          <div className="space-y-6">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#0481EC]">
+              If you have a different question
+            </h2>
+            <div>
+              <h3 className="text-lg sm:text-xl font-semibold mb-4">
+                You can reach out to us through email, we are always available.
+              </h3>
+              <div className="flex items-center gap-2 mb-4">
+                <MdEmail className="text-[#0481EC]" size={24} /> 
+                <a 
+                  href="mailto:info@1691techsolution.com" 
+                  className="text-base sm:text-lg hover:underline"
+                >
+                  info@1691techsolution.com
+                </a>
+              </div>
+              
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0481EC] mb-4">
+                Or Send us a Direct Message on WhatsApp
+              </h3>
+              <div className="flex items-center gap-2">
+                <FaPhone className="text-[#0481EC]" size={24} /> 
+                <a 
+                  href="https://wa.me/message/MBU45KTNZGT6O1" 
+                  className="text-base sm:text-lg hover:underline"
+                >
+                  +234 806 162 2596
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div className="flex justify-center md:justify-end">
+            <Image
+              className="w-full max-w-md"
+              src={Max2.src}
+              alt="1691 Tech Solution"
+              width={500}
+              height={500}
+              priority
+            />
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
   );
 };
 

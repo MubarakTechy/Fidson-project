@@ -1,56 +1,54 @@
-"use client"
+'use client'
 import React from 'react';
 import Image from 'next/image';
-
 import Main from '../../image/20542.jpg';
 
 const Hero = () => {
-
-
   return (
-    <div className="p-20">
-      <div className="px-4 py-6 md:p-8 lg:p-16 xl:p-36 p-38 flex flex-col md:flex-row items-center gap-8">
-        <div className="flex flex-col gap-5 w-full md:w-1/2">
-          <div className="flex flex-col gap-4 md:gap-6">
-            <span className="flex flex-col gap-1">
-              <h1 className="font-bold text-2xl max-sm:text-[37px] lg:text-[35px] tracking-wide md:tracking-[5px] w-full md:w-[90%] lg:w-[70%]">
-                Let&apos;s Create
+    <div className="container mx-auto mt-[10vw] px-4 py-10 md:py-16 lg:py-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+   
+        <div className="order-2 md:order-1 space-y-6">
+          <div className="space-y-4">
+            <div className="space-y-2">
+              <h1 className="text-2xl sm:text-[22px] md:text-[22px] lg:text-text-[22px] font-bold tracking-wide">
+                Let's Create
               </h1>
-              <p className="font-bold text-3xl  max-sm:text-[37px] lg:text-[45px] tracking-wide md:tracking-[10px] text-[#0481EC]">
+              <h2 className="text-3xl sm:text-[22px] md:text-[22px] lg:text-text-[22px] font-bold text-[#0481EC] tracking-wider">
                 Memorable
-              </p>
-              <p className="font-bold text-3xl  max-sm:text-[37px] lg:text-[45px] tracking-wide md:tracking-[10px] text-[#0481EC]">
+              </h2>
+              <h2 className="text-3xl sm:text-[22px] md:text-[22px] lg:text-text-[22px] font-bold text-[#0481EC] tracking-wider">
                 Experiences
-              </p>
-            </span>
+              </h2>
+            </div>
 
-            <span className="flex flex-col gap-3 md:gap-5">
-              <p className="text-sm md:text-[15px]">
-                Welcome to 1691 tech solution where you can get all most service and also get affodable gadget..
-              </p>
-              <a
-                href="/Aboutus"
-                className="p-2 bg-[#0481EC] text-[#E9E9E9] rounded-[15px] font-mono text-center w-full max-w-xs md:max-w-[15vw] lg:max-w-[10vw]"
-              >
-                Learn More
-              </a>
-            </span>
+            <p className="text-base sm:text-lg text-gray-700 max-w-prose">
+              Welcome to 1691 Tech Solution, where you can get almost every service and also find affordable gadgets.
+            </p>
           </div>
 
-          
-            
-           
-       
+          <div>
+            <a 
+              href="/Aboutus" 
+              className="inline-block px-6 py-3 bg-[#0481EC] text-white 
+              rounded-xl hover:bg-[#0462c0] transition-colors 
+              text-base sm:text-lg font-medium 
+              w-full sm:w-auto text-center"
+            >
+              Learn More
+            </a>
+          </div>
         </div>
 
-        <div className="w-full md:w-1/2 mt-8 md:mt-0">
+        {/* Image Section */}
+        <div className="order-1 md:order-2 flex justify-center md:justify-end">
           <Image
             src={Main.src}
-            alt="Main profile"
+            alt="1691 Tech Solution Hero Image"
             width={900}
             height={1100}
             priority
-            className="w-full  max-sm:w-[90vw] h-auto"
+            className="w-full max-w-md object-cover rounded-lg shadow-lg"
           />
         </div>
       </div>
