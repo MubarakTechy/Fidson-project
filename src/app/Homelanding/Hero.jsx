@@ -11,13 +11,13 @@ const Hero = () => {
         <div className="order-2 md:order-1 space-y-6">
           <div className="space-y-4">
             <div className="space-y-2">
-              <h1 className="text-2xl sm:text-[22px] md:text-[22px] lg:text-text-[22px] font-bold tracking-wide">
+              <h1 className="text-2xl sm:text-[30px] md:text-[22px] lg:text-5xl font-bold tracking-wide">
                 Let's Create
               </h1>
-              <h2 className="text-3xl sm:text-[22px] md:text-[22px] lg:text-text-[22px] font-bold text-[#0481EC] tracking-wider">
+              <h2 className="text-3xl sm:text-[30px] md:text-[22px] lg:text-6xl font-bold text-[#0481EC] tracking-wider">
                 Memorable
               </h2>
-              <h2 className="text-3xl sm:text-[22px] md:text-[22px] lg:text-text-[22px] font-bold text-[#0481EC] tracking-wider">
+              <h2 className="text-3xl sm:text-[30px] md:text-[22px] lg:text-6xl font-bold text-[#0481EC] tracking-wider">
                 Experiences
               </h2>
             </div>
