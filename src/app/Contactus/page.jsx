@@ -119,7 +119,7 @@ const Page = () => {
                                 </div>
                                 <div>
                                     <h1 className='text-lg md:text-xl text-white font-bold'>Address</h1>
-                                    <h1 className='text-sm md:text-base text-white opacity-90'>No. 3, Sokoto Road, Sabo-Oke, Ilorin</h1>
+                                    <h1 className='text-sm md:text-base text-white opacity-90'>No. 11, Francis Oremeji Street, directly beside UBA bank, computer village, Ikeja Lagos.</h1>
                                 </div>
                             </motion.div>
 

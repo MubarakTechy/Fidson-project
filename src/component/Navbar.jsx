@@ -33,16 +33,7 @@ const Navbar = () => {
 
           <div className="hidden max-lg:flex-none md:block">
             <ul className="flex space-x-8">
-              <li>
-                <a 
-                  href="/Product" 
-                  className={`relative font-mono text-lg ${isActive('/Product') ? 'text-[#0481EC]' : 'text-black hover:text-[#0481EC]'} transition-all duration-500 ease-in-out cursor-pointer group`}
-                >
-                  Product
-                  <span className={`absolute bottom-0 left-0 h-0.5 bg-[#0481EC] transition-all duration-500 ease-in-out ${isActive('/Product') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
-                </a>
-              </li>
-              <li>
+               <li>
                 <a 
                   href="/" 
                   className={`relative font-mono text-lg ${isActive('/') ? 'text-[#0481EC]' : 'text-black hover:text-[#0481EC]'} transition-all duration-500 ease-in-out cursor-pointer group`}
@@ -60,6 +51,17 @@ const Navbar = () => {
                   <span className={`absolute bottom-0 left-0 h-0.5 bg-[#0481EC] transition-all duration-500 ease-in-out ${isActive('/Aboutus') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
                 </a>
               </li>
+              <li>
+                <a 
+                  href="/Product" 
+                  className={`relative font-mono text-lg ${isActive('/Product') ? 'text-[#0481EC]' : 'text-black hover:text-[#0481EC]'} transition-all duration-500 ease-in-out cursor-pointer group`}
+                >
+                  Product
+                  <span className={`absolute bottom-0 left-0 h-0.5 bg-[#0481EC] transition-all duration-500 ease-in-out ${isActive('/Product') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+                </a>
+              </li>
+             
+              
               <li>
                 <a 
                   href="/Contactus" 
@@ -94,6 +96,22 @@ const Navbar = () => {
           }`}
         >
           <ul className="px-2 pt-2 pb-3 space-y-1">
+             <li>
+              <a 
+                href="/"
+                className={`block font-mono text-lg ${isActive('/') ? 'text-[#0481EC] translate-x-2' : 'text-black hover:text-[#0481EC] hover:translate-x-2'} transition-all duration-500 ease-in-out py-2`}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a 
+                href="/Aboutus"
+                className={`block font-mono text-lg ${isActive('/Aboutus') ? 'text-[#0481EC] translate-x-2' : 'text-black hover:text-[#0481EC] hover:translate-x-2'} transition-all duration-500 ease-in-out py-2`}
+              >
+                About
+              </a>
+            </li>
             <li>
               <a 
                 href="/Product"
@@ -102,14 +120,7 @@ const Navbar = () => {
                 Product
               </a>
             </li>
-            <li>
-              <a 
-                href="/"
-                className={`block font-mono text-lg ${isActive('/') ? 'text-[#0481EC] translate-x-2' : 'text-black hover:text-[#0481EC] hover:translate-x-2'} transition-all duration-500 ease-in-out py-2`}
-              >
-                Home
-              </a>
-            </li>
+           
             <li>
               <a 
                 href="/Aboutus"

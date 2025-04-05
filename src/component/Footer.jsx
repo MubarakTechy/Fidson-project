@@ -1,8 +1,9 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import Max2 from '../image/footer.png';
-import { FaPhone, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import Max2 from '../image/newFooter.png';
+import { FaPhone, FaInstagram , FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 
@@ -24,7 +25,7 @@ const Footer = () => {
               className="drop-shadow-lg"
             />
             <p className="text-blue-100 mt-4 max-w-sm">
-              Your trusted partner for all laptop solutions - sales, repairs, and accessories.
+              Tranforming Ideas into Solutions.
             </p>
           </div>
           
@@ -38,14 +39,21 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <h2 className="font-bold text-white text-xl mb-2 border-b border-blue-400 pb-2">Services</h2>
               <a href="https://wa.me/message/MBU45KTNZGT6O1" className="text-blue-100 hover:text-white hover:translate-x-1 transition-all">
-                Buy Laptops
+                Sales of Gadget/Accessories
               </a>
               <a href="/Repair" className="text-blue-100 hover:text-white hover:translate-x-1 transition-all">
-                Laptop Repair
+               Repair of Gadget
               </a>
               <a href="/Aboutus" className="text-blue-100 hover:text-white hover:translate-x-1 transition-all">
-                Accessories & Diagnosis
+                Web Development
               </a>
+              <a href="" className="text-blue-100 hover:text-white hover:translate-x-1 transition-all">
+                Cloud Solution
+              </a>
+              <a href="" className="text-blue-100 hover:text-white hover:translate-x-1 transition-all">
+                Information Tech Training
+              </a>
+
             </div>
             
 
@@ -79,7 +87,7 @@ const Footer = () => {
               </a>
               <a href="https://twitter.com/1691Tech" className="flex items-center gap-2 text-blue-100 hover:text-white transition-all">
                 <div className="bg-blue-500 p-2 rounded-full">
-                  <FaTwitter className="text-white" size={14} />
+                  <FaXTwitter className="text-white" size={14} />
                 </div>
                 <span>@1691Tech</span>
               </a>
@@ -112,7 +120,7 @@ const Footer = () => {
             </a>
             <a href="https://twitter.com/1691Tech" 
               className="bg-white hover:bg-blue-900 text-blue-600 hover:text-white p-2 rounded-full transition-all">
-              <FaTwitter size={20} />
+              <FaXTwitter  size={20} />
             </a>
             <button onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
               className="bg-white hover:bg-blue-900 text-blue-600 hover:text-white font-medium py-2 px-4 rounded-full ml-2 transition-all">

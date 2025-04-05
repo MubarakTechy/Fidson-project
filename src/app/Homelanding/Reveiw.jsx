@@ -14,7 +14,7 @@ const reviewData = [
 
   {
 
-    role: "CUSTOMER",
+    role: "Joy Joseph",
     review: "I love the watch ❤️ very perfect Battery life Rocking it non-stop  I appreciate😊",
     rating: 5,
 
@@ -24,7 +24,7 @@ const reviewData = [
   {
 
     
-    role: "CUSTOMER",
+    role: "James",
     review: "I will rate you 💯 as regards Customer safisfaction and swift response to enquired and delivery.. I Enjoy my Airpods cool sound and noise proof.✌️ ",
     rating: 4,
  
@@ -33,7 +33,7 @@ const reviewData = [
  
   {
 
-    role: "CUSTOMER",
+    role: "Ruth Tiye",
     review: " The three laptop I got are very perfect and Customer service is applaudable❤️",
     rating: 5,
 
@@ -42,7 +42,7 @@ const reviewData = [
 
   
   {
-    role: "CUSTOMER",
+    role: " Dave Johnson",
     review: "I highly recommend 1691 Tech for anyone looking to scale their business.❤️💯",
     rating: 4.5,
   },
