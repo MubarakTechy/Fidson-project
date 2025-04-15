@@ -10,7 +10,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-blue-600 to-blue-800 pt-12 pb-6">
+    <footer className=" mind bg-gradient-to-r from-blue-600 to-blue-800 pt-12 pb-6">
       <div className="container mx-auto px-4">
      
      
@@ -107,7 +107,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-blue-100 mb-4 md:mb-0">
-            ©2025 1691 Tech Solution. All rights reserved.
+          © {new Date().getFullYear()} 1691 Tech Solution. All rights reserved.
           </p>
           <div className="flex gap-4">
             <a href="https://wa.me/message/MBU45KTNZGT6O1" 

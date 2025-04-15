@@ -120,15 +120,6 @@ const Navbar = () => {
                 Product
               </a>
             </li>
-           
-            <li>
-              <a 
-                href="/Aboutus"
-                className={`block font-mono text-lg ${isActive('/Aboutus') ? 'text-[#0481EC] translate-x-2' : 'text-black hover:text-[#0481EC] hover:translate-x-2'} transition-all duration-500 ease-in-out py-2`}
-              >
-                About
-              </a>
-            </li>
             <li>
               <a 
                 href="/Contactus"

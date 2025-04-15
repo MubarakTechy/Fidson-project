@@ -3,15 +3,15 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Navbar from '../../component/Navbar';
 import Footer from '../../component/Footer';
-import Max2 from '../../image/Mask group (1).png';
-import Max3 from '../../image/Mask group (6).png';
-import Max4 from '../../image/Mask group (4).png';
-import Max5 from '../../image/Mask group (10).png';
-import Max6 from '../../image/Mask group (9).png';
-import Max7 from '../../image/IMG20220221133209 1.png';
-import Max8 from '../../image/Mask group (2).png';
-import Max9 from '../../image/Mask group (7).png';
-import Max1 from '../../image/Mask group (1).png';
+import Max2 from '../../image/Dell La 5320 .jpeg';
+import Max3 from '../../image/Dell Latitude 3390 .jpeg';
+import Max4 from '../../image/Dell xps 13 9365.jpeg';
+import Max5 from '../../image/HP 1040 G7 x360.jpeg';
+import Max6 from '../../image/HP 840 G3.jpeg';
+import Max7 from '../../image/HP ProBook x360 11G5.jpeg';
+import Max8 from '../../image/HP ProBook x360 11G5.jpeg';
+import Max9 from '../../image/HP Zbook Firefly G7 .jpeg';
+import Max1 from '../../image/Dell 3190 2in1 .jpeg';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 // Product data array for easy mapping
@@ -19,64 +19,63 @@ const products = [
   { 
     id: 1, 
     image: Max2, 
-    name: "Hp Spetre", 
-    specs: "8GB SSD/512GB SSD",
-    price: "$899",
-    details: "Intel Core i5 processor, 13.3-inch Full HD display, Windows 11 Pro, Backlit keyboard, 10+ hours battery life",
+    name: "Dell La 7400 2in1 ", 
+    specs: "UHD 512 SSD -16GB ",
+ 
+    details: " Touchscreen Keyboard light 8th Generation 13.3-inch screen Face recognition Fingerprints scanner @510k🇮🇸",
     available: true 
   },
   { 
     id: 2, 
     image: Max3, 
-    name: "Hp Spetre", 
-    specs: "8GB SSD/512GB SSD",
-    price: "$999",
-    details: "Intel Core i7 processor, 15.6-inch 4K UHD display, Windows 11 Pro, Backlit keyboard, 8+ hours battery life",
+    name: "Dell Latitude 3390 ", 
+    specs: "256 SSD 8gb ram",
+    price: "$999",   details: "Touch screen Keyboard - light 8th  - Generation 13.6 inches screen Face recognition @320k🇺🇸",
     available: true 
   },
   { 
     id: 3, 
     image: Max4, 
-    name: "Hp Spetre", 
-    specs: "8GB SSD/512GB SSD",
-    price: "$849",
-    details: "Intel Core i5 processor, 14-inch Full HD display, Windows 11 Home, Backlit keyboard, 12+ hours battery life",
+    name: "Dell xps 13 9365 ", 
+    specs: "512 SSD 16gb ram ",
+ 
+    details: " Touchscreen Keyboard light7th Generation Face recognition Fingerprint reader 4k view 🪟 display @550k🇺🇸",
     available: true 
   },
   { 
     id: 4, 
     image: Max5, 
-    name: "Hp Spetre", 
-    specs: "8GB SSD/512GB SSD",
-    price: "$1099",
-    details: "Intel Core i7 processor, 13.3-inch Touchscreen display, Windows 11 Pro, Backlit keyboard, 9+ hours battery life",
+    name: "HP Hewlett 1040 ", 
+    specs: "512 SSD -16gb RAM ",
+   
+    details: "size Hybrid system Multiple functions Long lasting battery 170k🇺🇸",
     available: true 
   },
   { 
     id: 5, 
     image: Max6, 
-    name: "HP Elitebook Folio 9480m", 
-    specs: "8GB SSD/512GB SSD",
-    price: "$799",
-    details: "Intel Core i5 processor, 14-inch HD display, Windows 10 Pro, Spill-resistant keyboard, 7+ hours battery life",
+    name: "HP 840 G5 ", 
+    specs: "G5 256SSD 8GB RAM ",
+
+    details: "CORE I5 7TH GEN KEYBOARD LIGHT @2.60Ghz",
     available: true 
   },
   { 
     id: 6, 
     image: Max7, 
-    name: "HP Elitebook Folio G1", 
-    specs: "8GB SSD/512GB SSD",
-    price: "$849",
-    details: "Intel Core i5 processor, 12.5-inch Full HD display, Windows 10 Pro, Backlit keyboard, 10+ hours battery life",
+    name: "HP PRO 11 ", 
+    specs: "256 SSD 8gb ram ",
+
+    details: "Touchscreen display 7th Generation 11inch size x360 @₦230k🇺🇸",
     available: true 
   },
   { 
     id: 7, 
     image: Max8, 
-    name: "HP 1030 x360", 
-    specs: "8gig SSD/512GB SSD",
-    price: "$1199",
-    details: "Intel Core i7 processor, 13.3-inch Full HD Touchscreen, Windows 11 Pro, Convertible design, 11+ hours battery life",
+    name: "HP Zbook Firefly G7", 
+    specs: "HD 512 SSD 16gb ram ",
+ 
+    details: "4 GB dedicated graphic keyboard light 10th Gen 12 logical processor @650k🇺🇸",
     available: true 
   },
   { 
@@ -91,9 +90,9 @@ const products = [
   { 
     id: 9, 
     image: Max1, 
-    name: "HP Zbook 15U G3", 
+    name: "Dell 3190 2in1 ", 
     specs: "16gig Ram/ 256gig SSD.",
-    price: "$1299",
+
     details: "Intel Core i7 processor, 15.6-inch Full HD display, Windows 10 Pro, NVIDIA graphics, 8+ hours battery life",
     available: true 
   },
@@ -130,8 +129,7 @@ const ProductCard = ({ product }) => {
       </div>
 
       {showDetails && (
-        <div className='mt-4 border-t pt-3 transition-all duration-300 ease-in-out'>
-          <p className='text-[#0481EC] font-bold text-lg mb-1'>{product.price}</p>
+        <div className='mt-4 border-t pt-3 transition-all duration-300 ease-in-out'> 
           <p className='text-gray-700 text-sm'>{product.details}</p>
           <button className='mt-4 w-full py-2 bg-[#0481EC] text-white rounded-md hover:bg-[#0369c5] transition-colors duration-300'>
             Buy Now

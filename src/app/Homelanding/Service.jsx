@@ -88,7 +88,7 @@ const Service = () => {
     <motion.div 
       initial="hidden"
       animate="visible"
-      className='flex flex-col items-center justify-center px-4 py-12 max-w-6xl mx-auto'
+      className='flex mind flex-col items-center justify-center px-4 py-12 max-w-6xl mx-auto'
     >
       <motion.h1 
         initial={{ opacity: 0, y: -50 }}
