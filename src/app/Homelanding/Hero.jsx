@@ -180,13 +180,7 @@ export default Hero;
 //           </div>
           
 //           <div className="flex flex-col sm:flex-row gap-4">
-//             <a
-//               href="/Aboutus"
-//               className="inline-block px-6 py-3 bg-blue-500 text-white
-//               rounded-xl hover:bg-blue-600 transition-colors
-//               text-base sm:text-lg font-medium
-//               text-center"
-//             >
+//
 //               Learn More
 //             </a>
             
