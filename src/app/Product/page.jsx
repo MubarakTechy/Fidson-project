@@ -123,7 +123,7 @@ const ProductCard = ({ product }) => {
 
       {showDetails && (
         <div className='mt-4 pt-3 border-t border-gray-200 transition-all duration-300 ease-in-out'> 
-          <p className='text-gray-700 text-sm'>{product.details}</p>j
+          <p className='text-gray-700 text-sm'>{product.details}</p>
         </div>
       )}
     </div>
