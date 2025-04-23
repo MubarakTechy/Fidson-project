@@ -22,6 +22,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
       
           <div className="flex-shrink-0">
+            <a href="/">
             <Image
               src={Max2.src}
               alt="1691 Logo"
@@ -29,6 +30,7 @@ const Navbar = () => {
               height={50} 
               priority  
             />
+            </a>
           </div>
 
           <div className="hidden max-lg:flex-none md:block">

@@ -16,12 +16,12 @@ const FAQItem = ({ question, answer }) => {
         className="w-full text-left flex justify-between items-center focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-lg sm:text-xl font-medium">{question}</span>
-        <span className="text-xl">{isOpen ? "−" : "+"}</span>
+        <span className="text-base sm:text-lg md:text-xl font-medium">{question}</span>
+        <span className="text-lg sm:text-xl">{isOpen ? "−" : "+"}</span>
       </button>
       {isOpen && (
         <div className="mt-2 text-gray-700">
-          <p className="text-base sm:text-lg">{answer}</p>
+          <p className="text-sm sm:text-base md:text-lg">{answer}</p>
         </div>
       )}
     </div>
@@ -58,14 +58,14 @@ const Page = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className=" flex flex-col">
       <Navbar />
-      <main className="flex-grow container mx-auto px-4 py-10">
+      <main className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-10">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-2xl sm:text-3xl font-bold text-[#0481EC] mb-8 text-center">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0481EC] mb-6 sm:mb-8 text-center">
             Frequently Asked Questions
           </h1>
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="bg-white rounded-lg shadow-md p-4 sm:p-6">
             {faqData.map((faq, index) => (
               <FAQItem
                 key={index}
@@ -76,47 +76,47 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="mt-16 grid md:grid-cols-2 gap-10 items-center">
-          <div className="space-y-6">
-            <h2 className="text-xl sm:text-2xl font-bold text-[#0481EC]">
+        <div className="mt-10 sm:mt-12 lg:mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 items-center">
+          <div className="space-y-4 sm:space-y-6">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-[#0481EC]">
               If you have a different question
             </h2>
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-4">
+              <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-3 sm:mb-4">
                 You can reach out to us through email, we are always available.
               </h3>
-              <div className="flex items-center gap-2 mb-4">
-                <MdEmail className="text-[#0481EC]" size={24} /> 
-                <a 
-                  href="mailto:info@1691techsolution.com" 
-                  className="text-base sm:text-lg hover:underline"
+              <div className="flex items-center gap-2 mb-3 sm:mb-4">
+                <MdEmail className="text-[#0481EC]" size={20} />
+                <a
+                  href="mailto:info@1691techsolution.com"
+                  className="text-sm sm:text-base md:text-lg hover:underline"
                 >
                   info@1691techsolution.com
                 </a>
               </div>
-              
-              <h3 className="text-xl sm:text-2xl font-bold text-[#0481EC] mb-4">
+
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#0481EC] mb-3 sm:mb-4">
                 Or Send us a Direct Message on WhatsApp
               </h3>
               <div className="flex items-center gap-2">
-                <FaPhone className="text-[#0481EC]" size={24} /> 
-                <a 
-                  href="https://wa.me/message/MBU45KTNZGT6O1" 
-                  className="text-base sm:text-lg hover:underline"
+                <FaPhone className="text-[#0481EC]" size={20} />
+                <a
+                  href="https://wa.me/message/MBU45KTNZGT6O1"
+                  className="text-sm sm:text-base md:text-lg hover:underline"
                 >
                   +234 806 162 2596
                 </a>
               </div>
             </div>
           </div>
-          
-          <div className="flex justify-center md:justify-end">
+
+          <div className="flex justify-center md:justify-end mt-6 md:mt-0">
             <Image
-              className="w-full max-w-md"
+              className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[400px] object-contain"
               src={Max2.src}
               alt="1691 Tech Solution"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               priority
             />
           </div>
