@@ -2,6 +2,11 @@
 import React from 'react';
 import Image from 'next/image';
 import Main from '../../image/tech.jpg';
+import Main2 from '../../image/system.jpg';
+import Main3 from '../../image/white.jpg';
+import Main4 from '../../image/network.jpg';
+
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -10,26 +15,20 @@ import 'swiper/css/autoplay';
 // Sample data for services/products
 const products = [
   {
-
-
     title: 'Web Development',
     desc: 'Modern, responsive websites built to impress.',
   },
-
   {
     title: 'Phone Accessories',
     desc: 'Affordable, quality gadgets and accessories.',
-
   },
   {
     title: 'Graphics Design',
     desc: 'Creative visuals that speak your brand.',
-
   },
   {
     title: 'IT Consultancy',
     desc: 'Professional advice for digital growth.',
-
   },
 ];
 
@@ -58,8 +57,8 @@ const Hero = () => {
           </div>
 
           <div>
-            <a 
-              href="/Aboutus" 
+            <a
+              href="/Aboutus"
               className="inline-block px-6 py-3 bg-[#0481EC] text-white 
               rounded-xl hover:bg-[#0462c0] transition-colors 
               text-base sm:text-lg font-medium 
@@ -70,18 +69,62 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Image Section */}
+        {/* Image Slider Section */}
         <div className="order-1 md:order-2 flex justify-center md:justify-end">
           <div className="relative w-full max-w-md md:max-w-full">
-            <Image
-              src={Main}
-              alt="1691 Tech Solution Hero Image"
-              width={500}
-              height={400}
-              priority
-              className="rounded-lg object-cover w-full h-auto"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
+            <Swiper
+              modules={[Autoplay]}
+              autoplay={{ delay: 3000 }}
+              slidesPerView={1}
+              spaceBetween={10}
+              loop={true}
+              className="rounded-lg"
+            >
+              <SwiperSlide>
+                <Image
+                  src={Main}
+                  alt="1691 Tech Solution Hero Image 1"
+                  width={500}
+                  height={400}
+                  priority
+                  className="rounded-lg object-cover w-full h-auto"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src={Main2}
+                  alt="1691 Tech Solution Hero Image 2"
+                  width={500}
+                  height={400}
+                  priority
+                  className="rounded-lg object-cover w-full h-auto"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src={Main3}
+                  alt="1691 Tech Solution Hero Image 3"
+                  width={500}
+                  height={400}
+                  priority
+                  className="rounded-lg object-cover w-full h-auto"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src={Main4}
+                  alt="1691 Tech Solution Hero Image 3"
+                  width={500}
+                  height={400}
+                  priority
+                  className="rounded-lg object-cover w-full h-auto"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>

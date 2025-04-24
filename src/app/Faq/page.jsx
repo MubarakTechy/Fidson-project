@@ -38,22 +38,22 @@ const Page = () => {
     {
       question: "Q: How do I receive my ordered products?",
       answer:
-        "Ans: Once your order is placed, we immediately begin processing it for delivery. You can pick up your order in person from our office at No. 3, Sokoto Road, Sabo-Oke, Ilorin, or we can deliver it to you through our trusted logistics partners.",
+        "Ans: Once your order is placed, we immediately begin processing it for delivery. You can pick up your order in person from our office at No. 11, Francis Oremeji Street, directly beside UBA bank, computer village, Ikeja Lagos, or we can deliver it to you through our trusted logistics partners.",
     },
     {
       question: "Q: How can I contact you for complaints or inquiries?",
       answer:
-        "Ans: You can always reach out to us through our contact details, and we will be happy to assist you. You can also visit our office at No. 3, Sokoto Road, Sabo-Oke, Ilorin.",
+        "Ans: You can always reach out to us through our contact details, and we will be happy to assist you. You can also visit our office at No. 11, Francis Oremeji Street, directly beside UBA bank, computer village, Ikeja Lagos.",
     },
     {
       question: "Q: Where is 1691 Tech Solution located?",
       answer:
-        "Ans: We are currently based in Ilorin, Kwara State, Nigeria.",
+        "Ans: We are currently based in No. 11, Francis Oremeji Street, directly beside UBA bank, computer village, Ikeja Lagos.",
     },
     {
       question: "Q: I can't find my preferred laptop specifications. What should I do?",
       answer:
-        "Ans: No worries! Click this link https://wa.link/ovw9rr to discuss your specific laptop requirements with us.",
+        "Ans: No worries! Click this link https://wa.me/message/MBU45KTNZGT6O1 to discuss your specific laptop requirements with us.",
     },
   ];
 
