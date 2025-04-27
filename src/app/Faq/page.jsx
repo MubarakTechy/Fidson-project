@@ -56,7 +56,7 @@ const Page = () => {
         "Ans: No worries! Click this link https://wa.me/message/MBU45KTNZGT6O1 to discuss your specific laptop requirements with us.",
     },
   ];
-
+// "Ans: No worries! Click this link https://wa.me/message/MBU45KTNZGT6O1 to discuss your specific laptop requirements with us.",
   return (
     <div className=" flex flex-col">
       <Navbar />
