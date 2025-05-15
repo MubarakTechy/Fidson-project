@@ -39,7 +39,7 @@ const PurchasePage = () => {
       <img src={product.image} alt={product.name} className="w-full h-64 object-cover rounded" />
       <h1 className="text-2xl font-bold mt-4">{product.name}</h1>
       <p className="text-gray-600 mt-2">{product.description}</p>
-      <p className="mt-3 font-semibold">Price: ${product.price}</p>
+      <p className="mt-3 font-semibold">Price: ₦{product.price}</p>
       <p className="text-sm mt-1 text-gray-500">Specs: {product.spec}</p>
       <p className="mt-2">
         Availability:{' '}
