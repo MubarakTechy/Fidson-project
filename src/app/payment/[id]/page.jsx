@@ -60,7 +60,7 @@ const PayForm = () => {
              toast.success("Payment successful!")
              setInterval(()=>{
               window.location.href = '/products'
-             })
+             }, 3000)
               // optionally redirect
             } else {
              toast.error('Payment verification failed.')
