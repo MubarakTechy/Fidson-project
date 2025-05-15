@@ -59,7 +59,7 @@ const Navbar = () => {
                   className={`relative font-mono text-lg ${isActive('/Product') ? 'text-[#0481EC]' : 'text-black hover:text-[#0481EC]'} transition-all duration-500 ease-in-out cursor-pointer group`}
                 >
                   Product
-                  <span className={`absolute bottom-0 left-0 h-0.5 bg-[#0481EC] transition-all duration-500 ease-in-out ${isActive('/Product') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+                  <span className={`absolute bottom-0 left-0 h-0.5 bg-[#0481EC] transition-all duration-500 ease-in-out ${isActive('/products') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
                 </a>
               </li>
              
@@ -117,9 +117,9 @@ const Navbar = () => {
             <li>
               <a 
                 href="/Product"
-                className={`block font-mono text-lg ${isActive('/Product') ? 'text-[#0481EC] translate-x-2' : 'text-black hover:text-[#0481EC] hover:translate-x-2'} transition-all duration-500 ease-in-out py-2`}
+                className={`block font-mono text-lg ${isActive('/products') ? 'text-[#0481EC] translate-x-2' : 'text-black hover:text-[#0481EC] hover:translate-x-2'} transition-all duration-500 ease-in-out py-2`}
               >
-                Product
+                Products
               </a>
             </li>
             <li>

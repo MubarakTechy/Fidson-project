@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Script from 'next/script';
 import { useParams } from 'next/navigation';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 
 const PayForm = () => {
   const [email, setEmail] = useState('');
@@ -58,6 +58,9 @@ const PayForm = () => {
             setLoading(false);
             if (data.purchase) {
              toast.success("Payment successful!")
+             setInterval(()=>{
+              window.location.href = '/products'
+             })
               // optionally redirect
             } else {
              toast.error('Payment verification failed.')
@@ -89,6 +92,8 @@ const PayForm = () => {
 
       <form onSubmit={handlePayment} className="max-w-md p-4 bg-white shadow rounded mx-auto mt-8">
         <h2 className="text-xl font-bold mb-4">Buy Product</h2>
+
+        <ToastContainer />
 
         <label className="block mb-2">
           Email:
