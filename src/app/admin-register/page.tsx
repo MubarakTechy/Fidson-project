@@ -31,7 +31,7 @@ const Page = () => {
       
       // Optional: Redirect or reset form
     } catch (error) {
-      setMessage(`❌ ${error.message}`);
+      setMessage(` ${error.message}`);
       console.log(error);
 
     } finally {
