@@ -17,7 +17,7 @@ const AboutUs = () => {
         <div className="flex flex-col items-center space-y-16">
           {/* About Us Section */}
           <section className="w-full flex flex-col md:flex-row gap-8 items-center">
-            <div className="w-full md:w-3/5 space-y-4">
+            <div className="w-full md:w-3/5 space-y-4 pt-10">
               <h1 className="text-3xl sm:text-4xl font-bold">About Us</h1>
               <p className="text-base leading-7">
                 1691 Tech Solutions is a forward-thinking IT and digital services company committed to 
@@ -29,7 +29,7 @@ const AboutUs = () => {
               </p>
               
               <div className="space-y-3">
-                <p className="text-base leading-7"><span className="font-bold">• Graphic Design:</span> Delivering captivating visual assets and branding that resonate with 
+                <p className="text-base leading-7"><span className="font-bold">• Product Design:</span> Delivering captivating visual assets and branding that resonate with 
                 your audience and amplify your market presence.</p>
                 
                 <p className="text-base leading-7"><span className="font-bold">• Web Development:</span> Creating responsive, intuitive, and scalable websites that form a 

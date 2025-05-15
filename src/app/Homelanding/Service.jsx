@@ -20,8 +20,8 @@ const Service = () => {
     },
     {
       src: Max2.src,
-      alt: 'Graphic Design',
-      title: "Graphic Designer",
+      alt: 'Product Design',
+      title: "Product Designer",
       description: "Creative visual solutions that captivate your audience, from branding materials to digital assets designed to enhance your market presence."
     },
     {

@@ -23,7 +23,7 @@ const products = [
     desc: 'Affordable, quality gadgets and accessories.',
   },
   {
-    title: 'Graphics Design',
+    title: 'Product Design',
     desc: 'Creative visuals that speak your brand.',
   },
   {

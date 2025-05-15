@@ -92,7 +92,7 @@ const Page = () => {
     return (
         <>
             <Navbar />
-            <div className='py-12 px-4 md:px-8 lg:p-16 xl:p-20 flex items-center justify-center'>
+            <div className='py-12 px-4 md:px-8 lg:p-16 xl:p-20 flex items-center justify-center mt-10'>
                 <motion.div 
                     className='bg-[#2256D4] rounded-lg shadow-xl w-full max-w-6xl overflow-hidden'
                     initial={{ opacity: 0, y: 50 }}
