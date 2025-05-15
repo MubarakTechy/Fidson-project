@@ -4,6 +4,15 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useUser } from "../../../../context/UserContext";
 
+interface Order {
+  _id: string;
+  reference: string;
+  phone: string;
+  total: number;
+  status: string;
+}
+
+
 const Page = () => {
   const [orders, setOrders] = useState([]);
   const { user } = useUser();
@@ -41,7 +50,7 @@ const Page = () => {
           </tr>
         </thead>
         <tbody>
-          {orders?.map((order: any) => (
+          {orders?.map((order: Order) => (
             <tr key={order._id} className="border-t">
               <td className="p-3">{order.reference}</td>
               <td className="p-3">{order.phone}</td>

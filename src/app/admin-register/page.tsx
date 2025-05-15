@@ -27,11 +27,11 @@ const Page = () => {
       }
 
       setMessage('✅ Registration successful!');
-      console.log(data);
+      // console.log(data);
       
       // Optional: Redirect or reset form
     } catch (error) {
-      setMessage(` ${error.message}`);
+      // setMessage(` ${error.message}`);
       console.log(error);
 
     } finally {

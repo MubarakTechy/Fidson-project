@@ -95,7 +95,7 @@ const Page = () => {
             </tr>
           </thead>
           <tbody>
-            {slicedOrders?.map((order: any) => (
+            {slicedOrders?.map((order) => (
               <tr key={order._id} className="border-t">
                 <td className="p-3">{order.reference}</td>
                 <td className="p-3">{order.phone}</td>

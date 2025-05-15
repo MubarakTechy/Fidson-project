@@ -5,6 +5,15 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useUser } from "../../../../context/UserContext";
 
+interface Product {
+  _id: string;
+  image: string;
+  name: string;
+  price: number;
+  description: string;
+}
+
+
 const Page = () => {
   const [products, setProducts] = useState([]);
   const { user } = useUser();
@@ -33,7 +42,7 @@ const Page = () => {
     <div>
       <h1 className="text-2xl font-bold mb-6 text-[#0481EC]">All Products</h1>
       <div className="grid gap-4">
-        {products.map((product: any) => (
+        {products.map((product: Product) => (
           <div
             key={product._id}
             className="bg-white p-4 w-[90%] mx-auto rounded shadow"
